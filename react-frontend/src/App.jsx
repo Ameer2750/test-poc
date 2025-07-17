@@ -24,7 +24,7 @@ function App() {
     setResponseMsg('');
 
     try {
-      const res = await axios.post('http://192.168.0.44/api/send', formData);
+      const res = await axios.post('http://192.168.0.45/api/send', formData);
       setResponseMsg(res.data.message);
     } catch (error) {
       if (error.response) {
