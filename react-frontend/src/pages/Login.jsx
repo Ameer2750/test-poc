@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     setErrorMsg('');
     try {
-      await axios.post('http://192.168.0.44/api/login', formData);
+      await axios.post('http://192.168.0.45/api/login', formData);
       navigate('/welcome');
     } catch (err) {
       setErrorMsg(err.response?.data?.error || 'Login failed');
